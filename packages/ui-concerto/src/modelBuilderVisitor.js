@@ -36,7 +36,11 @@ const declarationTypes = [
 ];
 
 /**
- * Convert the contents of a ModelManager to React compnents.
+ * Converts Concerto model definitions from a ModelManager into
+ * dynamic React form components.
+ * This visitor traverses model declarations and generates
+ * UI elements such as dropdowns, labels, and input fields
+ * based on the model structure.
  * @class
  */
 class ModelBuilderVisitor extends ReactFormVisitor {
